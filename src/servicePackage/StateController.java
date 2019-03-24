@@ -7,7 +7,8 @@ import dataPackage.VehicleData;
 
 public class StateController {	
 	
-	public String detectState(UserInputs userInputs , VehicleData vehicleData){
+	
+    public String detectState(UserInputs userInputs , VehicleData vehicleData){
 		if(!userInputs.isAcc_Status())
 			return "OFF";
 		else if(userInputs.isAcc_Status() &&
