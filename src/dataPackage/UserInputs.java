@@ -22,6 +22,10 @@ public class UserInputs {
 	public void setSetDistance(float setDistance) {
 		this.setDistance = setDistance;
 	} 
-	
-	
+	public Boolean checkSetSpeed(){
+		if(this.setSpeed <40 || this.setSpeed > 120){
+			return false;
+		}
+		return true;
+	}
 }

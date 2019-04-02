@@ -25,7 +25,16 @@ public class LeadingVehicle {
 	public void setLv_distance(float lv_distance) {
 		this.lv_distance = lv_distance;
 	}
-	
+	public Boolean checkLv_speed(){
+		if(this.lv_speed > 120 || this.lv_speed < 0)
+			return false;
+		return true;
+	}
+	public Boolean checkLv_distance(){
+		if(this.lv_distance > 150 || this.lv_distance < 0)
+			return false;
+		return true;
+	}
 	
 
 }

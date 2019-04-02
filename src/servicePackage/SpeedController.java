@@ -115,7 +115,7 @@ public class SpeedController {
 							+ "Decelerate at given time");
 					 return "Deaccelrating";
 				}
-				else if((leadingVehicle.getLv_distance() > userInputs.getSetDistance()
+				else if((leadingVehicle.getLv_distance() >= userInputs.getSetDistance()
 							&& vehicleData.getCurrentSpeed() < userInputs.getSetSpeed())
 						|| (leadingVehicle.getLv_speed() > userInputs.getSetSpeed()
 							&& vehicleData.getCurrentSpeed() < userInputs.getSetSpeed())){

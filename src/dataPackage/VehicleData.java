@@ -1,5 +1,7 @@
 package dataPackage;
 
+import java.lang.annotation.Retention;
+
 public class VehicleData {
 	
 
@@ -19,6 +21,10 @@ public class VehicleData {
 	public void setCurrentSpeed(float currentSpeed) {
 		this.currentSpeed = currentSpeed;
 	}
-
+	public Boolean checkCurrentSpeed(){
+		if(this.currentSpeed > 120 || this.currentSpeed < 0 )
+			return false;
+	    return true;
+	}
 
 }
